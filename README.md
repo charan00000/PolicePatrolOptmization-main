@@ -8,7 +8,7 @@ a graphml file is an XML file that is essentially structured like a graph, conta
 
 the find_euler_path.modify_graph() function is used to convert a graphml file into one that represnts an euler circuit. The function has three keyword arguments: graphml_input for the input graphml path. 
 
-The third parameter is the method used to eulerize the graph and has three options:
+The third parameter is the method used to find an euler circuit in the graph and has three options:
   - "fleury" (default): uses Networkx's builtin eulerize function, which connects vertices of odd degree together with no consideration of weight or distance between odd degreed nodes using the fleury algorithm. In the case the graph is already euler, you can leave this parameter at "base".
   - "min_weights": connects degreed vertices, this time attempting to find, for each odd-degree vertex, another one that's the shortest distance away to connect with. With this method, shortest = lowest number of other vertices crossed and doesn't consider lengths of each segment. Keep in mind that a segment is not an entire road, but a small portion of a road (not necessarily connecting a road intersection to another road intersection).
   - "dijkstra": similar approach to "min_weights" but uses djkstra's algorithm to factor in weights, which in the context of this project is lengths of road segments in (by default) miles. Close in outputted graph to fleury.

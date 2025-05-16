@@ -1,6 +1,6 @@
 # PolicePatrolOptimization
 
-This repository is a supplement to our paper: https://docs.google.com/document/d/10-syP0GjfmwT1vPXm6TVYVB3fopaaWNEwXu1rFjYXdU/edit?usp=sharing. Check requirements.txt for all necessary imports. 
+This repository is a supplement to our paper as part of a school project: https://docs.google.com/document/d/10-syP0GjfmwT1vPXm6TVYVB3fopaaWNEwXu1rFjYXdU/edit?usp=sharing. Check requirements.txt for all necessary imports. 
 
 main_driver: this is where you can run all functions. Scroll down past plot(). You can convert a geojson file, as found online on many government platforms, into a graphml file that can be used to find euler circuits, and then convert back into a geojson file. You can visualize the new geojson file using aoftware such as QGIS. When visualizing modified geojsons, make sure to configure labeling so that order labels are displayed, allowing you to see direction in circuits. This label is found as a column in the geo data frame of the output geojson file. 
 

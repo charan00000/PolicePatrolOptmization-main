@@ -31,4 +31,4 @@ things to know:
       - If you supply your own geojson data, look through it and find what its keys are for road type and road name (find how it labels road name and road type). Then supply them in as keyword parameters to convert_to_graph_road_edges()
   - If you supply your own geojson data, make sure there are no multi line strings in it. These are not supported because they can result in edges not being connected.
       - If you supply your own data and it has multilines, one possible solution is to go back to where you downloaded the data and filter out neighborhood roads.
-      - If by the rare chance you end up with a disconnected graph after filtering out multilines and get your geojson from a GIS website, try adjusting the area in which you factor in data before downloading it into a geojson.
+      - If you end up with a disconnected graph after filtering out multilines and get your geojson from a GIS website, try adjusting the area in which you factor in data before downloading it into a geojson.
